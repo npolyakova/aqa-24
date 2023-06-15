@@ -26,6 +26,7 @@ public class WebTest {
             capabilities.setCapability("enableVNC:", "true"); //--vnc
             capabilities.setCapability("enableVideo:", "true");
             Configuration.browserCapabilities = capabilities;
+            Configuration.remote = "http://localhost:4444/wd/hub";
             WebDriver driver = new RemoteWebDriver(URI.create("http://localhost:4444/wd/hub").toURL(),
                     capabilities);
             setWebDriver(driver);
