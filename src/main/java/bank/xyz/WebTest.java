@@ -22,7 +22,7 @@ public class WebTest {
 
         if (true) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setBrowserName("firefox");
+            capabilities.setBrowserName("chrome");
             capabilities.setCapability("enableVNC:", "true"); //--vnc
             capabilities.setCapability("enableVideo:", "true");
             Configuration.browserCapabilities = capabilities;
